@@ -1,3 +1,7 @@
-# E-Commerce-Website [![.NET Framework](https://github.com/OudomMunint/E-Commerce-Website/actions/workflows/dotnet.yml/badge.svg)](https://github.com/OudomMunint/E-Commerce-Website/actions/workflows/dotnet.yml)
-INFT3050 - Web Programming using C# asp.NET, Bootstrap, TSQL, MSS Server
-# ONLY for EDUCATIONAL Or LEARNING PURPOSES. NOT to be used for any kind of University assignments or Projects
+# E-Commerce-Website-Restyle
+### Fork of Candice moments E-Commerce-Website from <a href="https://github.com/AsimFaiaz/E-Commerce-Website">this repo</a> for restyling work.
+
+# CI Build Status:
+[![.NET Framework CI](https://github.com/OudomMunint/E-Comm-Web-Fork-ReStyle/actions/workflows/main.yml/badge.svg)](https://github.com/OudomMunint/E-Comm-Web-Fork-ReStyle/actions/workflows/main.yml)
+# Maintenance:
+![maintenance-status](https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg)
