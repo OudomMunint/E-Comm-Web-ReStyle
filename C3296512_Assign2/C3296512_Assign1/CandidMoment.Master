@@ -1,0 +1,175 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CandidMoment.master.cs" Inherits="C3296512_Assign1.CandidMoment" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <%--<title></title>--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8">
+    <%--Specifying the character encoding for the HTML document --%>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%--Setting the viewport to make your website look good on all devices--%>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <%--Using default browser as Edge, Can be changed any time and any browser--%>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <%--Minified CSS--%>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <%--Monserrat font--%>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <%--Lato font--%>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <%--Using bootstrap 3 manually and  minified JavaScript--%>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <%--Using bootstrap 3 manually and  minified JavaScript--%>
+
+
+    <%-- Some CSS auto codes/ Styles--%>
+    <style type="text/css">
+        /*Naviagtion bar*/
+        .navbar {
+            margin-bottom: 0;
+            background-color: whitesmoke;
+            z-index: 9999;
+            border: 0;
+            border-radius: 5px;
+            font-size: 17px !important;
+            line-height: 5 !important;
+            letter-spacing: 4px;
+            font-family: Montserrat, sans-serif;
+        }
+
+            .navbar li a, .navbar .navbar-brand {
+                color: green !important;
+            }
+
+        .navbar-nav li a:hover, .navbar-nav li.active a {
+            color: black !important;
+            background-color: whitesmoke !important;
+        }
+        /* Navigation bar finish  */
+
+        /*CSS design inside body*/
+        /*CSS for Jumbotron Part*/
+        .jumbotron {
+            background-color: whitesmoke; /*color of the box*/
+            color: black; /*color of the font*/
+            font-family: Montserrat;
+            padding: 50px 50px;
+        }
+        /*CSS for Jumbotron Part finish here*/
+
+        /*CSS for Carousel Part For my HomePage Connected with Masterpage*/
+        .carousel-control.right, .carousel-control.left {
+            color: whitesmoke;
+        }
+
+        .carousel-indicators li {
+            border-color: whitesmoke;
+        }
+
+            .carousel-indicators li.active {
+                background-color: green;
+            }
+        /*CSS for Carousel Part finish here*/
+
+        /*CSS for login form*/
+        .center {
+            width: 500px;
+            height: 200px;
+            position: absolute;
+            margin: auto;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+        }
+
+
+        /*Auto style while designing*/
+        .auto-style1 {
+            float: left;
+            height: 50px;
+            padding: 15px 15px;
+            line-height: 20px;
+        }
+
+        .auto-style2 {
+            font-size: xx-large;
+        }
+    </style>
+    <%--/*Auto style while designing*/--%>
+</head>
+<body id="CMom" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <form id="form1" runat="server" class="form-inline">
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="width: auto">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="HomePage.aspx">Candid Moments</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <%--List of navigation items--%>
+                        <%--Tags are taken from Textboox and Bootstrap website--%>
+
+                        <%--Home Page navigation--%>
+                        <li><a href="HomePage.aspx">Home</a> </li>
+                        <%--Search Page navigation--%>
+                        <li><a href="SearchPage.aspx">Search</a> </li>
+                        <%--About Page navigation--%>
+                        <li><a href="AboutPage.aspx">Who we are</a> </li>
+                        <%--Contact Page navigation--%>
+                        <li><a href="ContactPage.aspx">Contact</a></li>
+                        <%--Cart Page navigation--%>
+                        <li><a href="CartPage.aspx">Cart</a></li>
+
+                        <%--product pages dropdown menu Navigation--%>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">What we have<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-divider" style="font-size: medium"><a href="#"><strong>Cameras</strong></a></li>
+                                <li><a href="CanonDSLR.aspx">Canon</a></li>
+                                <li><a href="NikonDSLR.aspx">Nikon</a></li>
+                                <li><a href="SonyDSLR.aspx">Sony</a></li>
+                                <li class="dropdown-divider" style="font-size: medium"><a href="#"><strong>Secondhand Cameras</strong></a></li>
+                                <li><a href="CanonSecondHand.aspx">Canon</a></li>
+                                <li><a href="NikonSecondHand.aspx">Nikon</a></li>
+                                <li><a href="SonySecondHand.aspx">Sony</a></li>
+                                <li class="dropdown-divider" style="font-size: medium"><a href="#"><strong>Lens</strong></a></li>
+                                <li><a href="KitLens.aspx">Kit lens</a></li>
+                                <li><a href="WideLens.aspx">Wide lens</a></li>
+                                <li><a href="PrimeLens.aspx">Prime lens</a></li>
+                                <li class="dropdown-divider" style="font-size: medium"><a href="#"><strong>Accessories</strong></a></li>
+                                <li><a href="Lightguns.aspx">Light guns</a></li>
+                                <li><a href="Battries.aspx">Batteries</a></li>
+                                <li><a href="BagsAndCases.aspx">Bags and Cases</a></li>
+                            </ul>
+                        </li>
+
+                        <%--Login pages dropdown Navigation--%>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Join US<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-divider" style="font-size: medium"><a href="#"><strong></strong></a></li>
+                                <li><a href="LoginPage.aspx">Log IN</a></li>
+                                <li><a href="RegisterPage.aspx">Register</a></li>
+                                <li><a href="AdminLogin.aspx">Admin Log In</a></li>
+                                <li><a href="AdminRegistration.aspx">Admin Register</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <%--Navigation Finish here--%>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>

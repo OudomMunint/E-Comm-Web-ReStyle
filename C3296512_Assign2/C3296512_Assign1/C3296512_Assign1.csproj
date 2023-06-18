@@ -1,0 +1,450 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{037E503E-F8D5-4F1A-A386-608FD045DA97}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>C3296512_Assign1</RootNamespace>
+    <AssemblyName>C3296512_Assign1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44336</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Images\12.jpg" />
+    <Content Include="Images\Bags.jpg" />
+    <Content Include="Images\Battery.jpg" />
+    <Content Include="Images\Canon 1D.jpg" />
+    <Content Include="Images\Canon 5D Mark IV.jpg" />
+    <Content Include="Images\Canon 6D.jpg" />
+    <Content Include="Images\Canon 90D.jpg" />
+    <Content Include="Images\Editor.jpg" />
+    <Content Include="Images\Flinder street station.jpg" />
+    <Content Include="Images\Harvard.jpg" />
+    <Content Include="Images\Kit lens.jpg" />
+    <Content Include="Images\Koala.jpg" />
+    <Content Include="Images\Light guns.jpg" />
+    <Content Include="Images\Manly beach.jpg" />
+    <Content Include="Images\Nikon D6.jpg" />
+    <Content Include="Images\Nikon Z 6 II.jpg" />
+    <Content Include="Images\Nikon Z 7 II.jpg" />
+    <Content Include="Images\Nikon Z 7.jpg" />
+    <Content Include="Images\Ocean.jpg" />
+    <Content Include="Images\Opera.jpg" />
+    <Content Include="Images\Photographer.jpg" />
+    <Content Include="Images\Prime lens.jpg" />
+    <Content Include="Images\Sea cliff bridge.jpg" />
+    <Content Include="Images\Sony A7 3.jpg" />
+    <Content Include="Images\Sony A7 Alpha.jpg" />
+    <Content Include="Images\Wide Lens.jpg" />
+    <Content Include="UserLayer\AboutPage.aspx" />
+    <Content Include="UserLayer\AdminHomePage.aspx" />
+    <Content Include="UserLayer\AdminLogin.aspx" />
+    <Content Include="UserLayer\AdminManageItems.aspx" />
+    <Content Include="UserLayer\AdminManageUserAccounts.aspx" />
+    <Content Include="UserLayer\AdminRegistration.aspx" />
+    <Content Include="UserLayer\CartPage.aspx" />
+    <Content Include="UserLayer\CheckoutPage.aspx" />
+    <Content Include="UserLayer\ConfirmationPage.aspx" />
+    <Content Include="UserLayer\ContactPage.aspx" />
+    <Content Include="UserLayer\DeliveryDetails.aspx" />
+    <Content Include="UserLayer\HomePage.aspx" />
+    <Content Include="UserLayer\BagsAndCases.aspx" />
+    <Content Include="UserLayer\Battries.aspx" />
+    <Content Include="UserLayer\CanonDSLR.aspx" />
+    <Content Include="UserLayer\CanonSecondHand.aspx" />
+    <Content Include="UserLayer\KitLens.aspx" />
+    <Content Include="UserLayer\LightGuns.aspx" />
+    <Content Include="UserLayer\LoginPage.aspx" />
+    <Content Include="UserLayer\NikonDSLR.aspx" />
+    <Content Include="UserLayer\NikonSecondHand.aspx" />
+    <Content Include="UserLayer\PaymentPage.aspx" />
+    <Content Include="UserLayer\PrimeLens.aspx" />
+    <Content Include="UserLayer\RegisterPage.aspx" />
+    <Content Include="UserLayer\SonyDSLR.aspx" />
+    <Content Include="UserLayer\SonySecondhand.aspx" />
+    <Content Include="UserLayer\TearmsAndConditions.aspx" />
+    <Content Include="UserLayer\WideLens.aspx" />
+    <Content Include="UserLayer\ProfessionalTeam.aspx" />
+    <Content Include="UserLayer\SearchPage.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="BusinessLayer\AdminLogInBL.cs" />
+    <Compile Include="BusinessLayer\CustomerRegistrationBL.cs" />
+    <Compile Include="BusinessLayer\LoginPageBL.cs" />
+    <Compile Include="CandidMoment.Master.cs">
+      <DependentUpon>CandidMoment.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CandidMoment.Master.designer.cs">
+      <DependentUpon>CandidMoment.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccessLayer\AdminLogInDAL.cs" />
+    <Compile Include="DataAccessLayer\CustomerRegistrationDAL.cs" />
+    <Compile Include="DataAccessLayer\LoginPageDAL.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Admin1.cs" />
+    <Compile Include="Models\AdminLogIN.cs" />
+    <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\CustomerLogIn.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Order1.cs" />
+    <Compile Include="Models\Payment.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ResidencialAddress.cs" />
+    <Compile Include="Models\ShippingAddress.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserLayer\AboutPage.aspx.cs">
+      <DependentUpon>AboutPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\AboutPage.aspx.designer.cs">
+      <DependentUpon>AboutPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\AdminHomePage.aspx.cs">
+      <DependentUpon>AdminHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\AdminHomePage.aspx.designer.cs">
+      <DependentUpon>AdminHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\AdminManageItems.aspx.cs">
+      <DependentUpon>AdminManageItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\AdminManageItems.aspx.designer.cs">
+      <DependentUpon>AdminManageItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\AdminManageUserAccounts.aspx.cs">
+      <DependentUpon>AdminManageUserAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\AdminManageUserAccounts.aspx.designer.cs">
+      <DependentUpon>AdminManageUserAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\AdminRegistration.aspx.cs">
+      <DependentUpon>AdminRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\AdminRegistration.aspx.designer.cs">
+      <DependentUpon>AdminRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\CartPage.aspx.cs">
+      <DependentUpon>CartPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\CartPage.aspx.designer.cs">
+      <DependentUpon>CartPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\CheckoutPage.aspx.cs">
+      <DependentUpon>CheckoutPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\CheckoutPage.aspx.designer.cs">
+      <DependentUpon>CheckoutPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\ConfirmationPage.aspx.cs">
+      <DependentUpon>ConfirmationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\ConfirmationPage.aspx.designer.cs">
+      <DependentUpon>ConfirmationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\ContactPage.aspx.cs">
+      <DependentUpon>ContactPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\ContactPage.aspx.designer.cs">
+      <DependentUpon>ContactPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\DeliveryDetails.aspx.cs">
+      <DependentUpon>DeliveryDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\DeliveryDetails.aspx.designer.cs">
+      <DependentUpon>DeliveryDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\BagsAndCases.aspx.cs">
+      <DependentUpon>BagsAndCases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\BagsAndCases.aspx.designer.cs">
+      <DependentUpon>BagsAndCases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\Battries.aspx.cs">
+      <DependentUpon>Battries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\Battries.aspx.designer.cs">
+      <DependentUpon>Battries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\CanonDSLR.aspx.cs">
+      <DependentUpon>CanonDSLR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\CanonDSLR.aspx.designer.cs">
+      <DependentUpon>CanonDSLR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\CanonSecondHand.aspx.cs">
+      <DependentUpon>CanonSecondHand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\CanonSecondHand.aspx.designer.cs">
+      <DependentUpon>CanonSecondHand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\KitLens.aspx.cs">
+      <DependentUpon>KitLens.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\KitLens.aspx.designer.cs">
+      <DependentUpon>KitLens.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\LightGuns.aspx.cs">
+      <DependentUpon>LightGuns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\LightGuns.aspx.designer.cs">
+      <DependentUpon>LightGuns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\NikonDSLR.aspx.cs">
+      <DependentUpon>NikonDSLR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\NikonDSLR.aspx.designer.cs">
+      <DependentUpon>NikonDSLR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\NikonSecondHand.aspx.cs">
+      <DependentUpon>NikonSecondHand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\NikonSecondHand.aspx.designer.cs">
+      <DependentUpon>NikonSecondHand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\PaymentPage.aspx.cs">
+      <DependentUpon>PaymentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\PaymentPage.aspx.designer.cs">
+      <DependentUpon>PaymentPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\PrimeLens.aspx.cs">
+      <DependentUpon>PrimeLens.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\PrimeLens.aspx.designer.cs">
+      <DependentUpon>PrimeLens.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\RegisterPage.aspx.cs">
+      <DependentUpon>RegisterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\RegisterPage.aspx.designer.cs">
+      <DependentUpon>RegisterPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\SonyDSLR.aspx.cs">
+      <DependentUpon>SonyDSLR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\SonyDSLR.aspx.designer.cs">
+      <DependentUpon>SonyDSLR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\SonySecondhand.aspx.cs">
+      <DependentUpon>SonySecondhand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\SonySecondhand.aspx.designer.cs">
+      <DependentUpon>SonySecondhand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\TearmsAndConditions.aspx.cs">
+      <DependentUpon>TearmsAndConditions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\TearmsAndConditions.aspx.designer.cs">
+      <DependentUpon>TearmsAndConditions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\WideLens.aspx.cs">
+      <DependentUpon>WideLens.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\WideLens.aspx.designer.cs">
+      <DependentUpon>WideLens.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\ProfessionalTeam.aspx.cs">
+      <DependentUpon>ProfessionalTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\ProfessionalTeam.aspx.designer.cs">
+      <DependentUpon>ProfessionalTeam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLayer\SearchPage.aspx.cs">
+      <DependentUpon>SearchPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLayer\SearchPage.aspx.designer.cs">
+      <DependentUpon>SearchPage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CandidMoment.Master" />
+    <Content Include="Admin.Master" />
+    <Content Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="DataLayer\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52999</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44336/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
